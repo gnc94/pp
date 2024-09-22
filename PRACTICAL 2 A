@@ -1,0 +1,11 @@
+def isVowel(char):
+    vowel = ['a', 'e', 'i', 'o', 'u']
+
+    if char in vowel:
+        return True
+    else:
+        return False
+
+character = input("Enter a character: ")
+
+print("Is character '", character, "' a vowel? ", isVowel(character))
