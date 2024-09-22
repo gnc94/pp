@@ -1,0 +1,6 @@
+def histogram(lst):
+    for i in range(len(lst)):
+        print(lst[i] * '*')
+
+l1 = [3, 5, 2]
+histogram(l1)
