@@ -1,0 +1,12 @@
+def len_string(s):
+    c = 0
+
+    for i in s:
+        if i != ' ':
+            c += 1
+
+    return c
+
+s1 = input("Enter a string: ")
+
+print("String length is", len_string(s1))
