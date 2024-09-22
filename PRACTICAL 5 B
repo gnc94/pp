@@ -1,0 +1,10 @@
+d1 = {1: 111, 2: 2222, 3: 3333}
+d2 = {12: 121, 123: 12321}
+d3 = {"name": "imran", "Age": 19, "RollNo": 3}
+
+d = {}
+
+for i in d1, d2, d3:
+    d.update(i)
+
+print("Updated dictionary:", d)
