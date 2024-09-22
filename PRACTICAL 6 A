@@ -1,0 +1,7 @@
+obj = open('sameer.txt', 'w') 
+obj.write("o yeah ")
+obj.close()
+
+obj = open('sameer.txt', 'r')
+print(obj.read())
+obj.close()
