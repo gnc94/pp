@@ -1,0 +1,9 @@
+d = {39: 'sameer', 78: 'ishaque', 85: 'afzal', 34: 'adnan', 38: 'sajid'} 
+
+print('Ascending order:')
+for a, b in sorted(d.items()):
+    print(a, b)
+
+print('Descending order:')
+for x, y in sorted(d.items(), reverse=True):
+    print(x, y)
