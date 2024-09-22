@@ -1,0 +1,15 @@
+l1 = [25, 65, 254, 124, 'sameer', 123]
+l2 = [546, 565, 'sameer']
+
+c = 0
+
+for i in l1:
+    if i in l2:
+        c += 1
+
+print(c)
+
+if c > 0:
+    print("True")
+else:
+    print("False")
