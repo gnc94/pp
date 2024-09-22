@@ -1,0 +1,5 @@
+a = {235: 12, 56: 98, 12: 10}
+
+print("Sum of values:", sum(a.values()))
+print("Sum of keys:", sum(a.keys()))
+print("Sum of all the items:", sum(a.values()) + sum(a.keys()))
