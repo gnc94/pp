@@ -1,0 +1,8 @@
+from datetime import datetime
+
+x = input("Enter your name: ")
+y = int(input("Enter your age: "))
+
+year_when_100 = 100 - y + datetime.now().year
+
+print(f"{x}, you will turn 100 years old in {year_when_100}.")
