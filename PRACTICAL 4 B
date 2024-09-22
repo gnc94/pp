@@ -1,0 +1,14 @@
+list1 = [12, 45, 65, 987, 'kjbkhgbteugy', 'kerhg', 424, 56, 45, 12, 35]
+print(list1)
+
+list1.pop(0)
+print("List after removing 0th element:", list1)
+
+list1.pop(2)
+print("List after removing 2nd element:", list1)
+
+list1.pop(4)
+print("List after removing 4th element:", list1)
+
+list1.pop(5)
+print("List after removing 5th element:", list1)
