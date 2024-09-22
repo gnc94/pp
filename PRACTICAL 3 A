@@ -1,0 +1,8 @@
+import string
+
+def is_pangram(sen, alpha=string.ascii_lowercase):
+    alphaset = set(alpha)
+    return alphaset <= set(sen.lower())
+
+sen = input("Enter a sentence: ")
+print(is_pangram(sen))
