@@ -2,7 +2,7 @@ num = int(input("Enter a number: "))
 
 def armstrong(n):
     s = 0
-    original = n  # Keep the original number for comparison
+    original = n
     while n != 0:
         r = n % 10
         s = s + r * r * r
@@ -14,7 +14,7 @@ def armstrong(n):
 
 def palindrome(n):
     s = 0
-    original = n  # Keep the original number for comparison
+    original = n
     while n != 0:
         r = n % 10
         s = s * 10 + r
