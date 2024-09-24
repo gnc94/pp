@@ -1,0 +1,23 @@
+class Numbers: 
+    multiplier = 5 
+    
+    def __init__(self, x, y): 
+        self.x = x 
+        self.y = y 
+    
+    def add(self):
+        return self.x + self.y 
+    
+    @classmethod
+    def multiply(cls, a):
+        return a * cls.multiplier
+
+    @staticmethod
+    def subtract(b, c):
+        return b - c
+
+obj = Numbers(5, 5)
+
+print(obj.add())
+print(Numbers.multiply(5))
+print(Numbers.subtract(9, 2))
