@@ -1,0 +1,115 @@
+import tkinter
+from tkinter import *
+
+root = Tk()
+var = StringVar()
+label = Message(root, textvariable=var, relief=RAISED)
+
+var.set("Hey!? How are you doing?")
+
+label.pack()
+
+root.mainloop()
+
+//buton.py
+
+import tkinter
+from tkinter import *
+from tkinter import messagebox
+
+root = Tk()
+
+def helloCallBack():
+    messagebox.showinfo("Hello Python", "Hello World")
+
+B = Button(root, text="Hello", command=helloCallBack)
+
+B.pack()
+
+root.mainloop()
+
+//Entry.py
+
+import tkinter 
+from tkinter import *
+
+root = Tk()
+
+L1 = Label(root, text="User Name")
+L1.pack(side=LEFT)
+
+E1 = Entry(root, bd=5)
+E1.pack(side=RIGHT)
+
+root.mainloop()
+
+//Checkbutton.py
+
+import tkinter
+from tkinter import *
+
+root = Tk()
+
+CheckVar1 = IntVar()
+CheckVar2 = IntVar()
+
+C1 = Checkbutton(root, text="Music", variable=CheckVar1, onvalue=1, offvalue=0,
+                  height=5, width=20)
+C2 = Checkbutton(root, text="Video", variable=CheckVar2, onvalue=1, offvalue=0,
+                  height=5, width=20)
+
+C1.pack()
+C2.pack()
+
+root.mainloop()
+
+//Radiobutton.py
+
+import tkinter
+from tkinter import *
+
+root = Tk()
+
+var = IntVar()  # Initialize the IntVar outside the sel function
+
+def sel():
+    selection = "You selected the option " + str(var.get())
+    label.config(text=selection)
+
+R1 = Radiobutton(root, text="Option 1", variable=var, value=1, command=sel)
+R1.pack(anchor=W)
+
+R2 = Radiobutton(root, text="Option 2", variable=var, value=2, command=sel)
+R2.pack(anchor=W)
+
+R3 = Radiobutton(root, text="Option 3", variable=var, value=3, command=sel)
+R3.pack(anchor=W)
+
+label = Label(root)
+label.pack()
+
+root.mainloop()
+
+//Scale.py
+
+import tkinter 
+from tkinter import *
+
+root = Tk()
+
+var = DoubleVar()
+
+def sel():
+    selection = "Value = " + str(var.get())
+    label.config(text=selection)
+
+scale = Scale(root, variable=var)
+scale.pack(anchor=CENTER)
+
+button = Button(root, text="Get Scale Value", command=sel)
+button.pack(anchor=CENTER)
+
+label = Label(root)
+label.pack()
+
+root.mainloop()
