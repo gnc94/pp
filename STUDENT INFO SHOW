@@ -1,0 +1,13 @@
+class Student: 
+    def getdata(self):
+        self.Name = input('Please Enter Student Name: ')
+        self.PID = int(input('Please Enter PID Number: '))
+        self.Course = input('Please Enter Course Name: ')
+
+    def display(self):
+        print('Student Details: ')
+        print('Student Name: ' + self.Name + ' PID number: ' + str(self.PID) + ' Course: ' + self.Course)
+
+obj = Student()
+obj.getdata()
+obj.display()
